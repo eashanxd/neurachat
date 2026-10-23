@@ -6,3 +6,17 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+# Local database
+neurachat.db
+
+# Uploaded documents and RAG indexes
+data/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/.next/
+
+# Logs and OS files
+*.log
+.DS_Store
