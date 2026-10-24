@@ -203,31 +203,6 @@ The services are exposed at:
 | API documentation | `http://localhost:8000/docs` |
 | Health check | `http://localhost:8000/health` |
 
-### Useful Docker commands
-
-```bash
-# Start services in the background
-docker compose up -d
-
-# View running services
-docker compose ps
-
-# Follow application logs
-docker compose logs -f
-
-# View logs for a specific service
-docker compose logs -f backend
-docker compose logs -f frontend
-
-# Stop the services
-docker compose down
-
-# Rebuild the application images
-docker compose up --build -d
-```
-
-The Compose configuration mounts local database and document data, and uses a named volume for the Hugging Face model cache. Keep these volumes intact when restarting the application if you want to preserve local data.
-
 ## Configuration
 
 | Setting | Purpose |
